@@ -1,3 +1,4 @@
+<!-- privacy.html -->
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -14,12 +15,14 @@
             color: #222;
             line-height: 1.7;
         }
+
         h1 {
             font-size: 28px;
             font-weight: 600;
             margin-bottom: 20px;
             color: #000;
         }
+
         h2 {
             font-size: 20px;
             font-weight: 600;
@@ -27,16 +30,42 @@
             margin-bottom: 12px;
             color: #000;
         }
+
         p {
             font-size: 16px;
             margin-bottom: 16px;
         }
+
         small {
             display: block;
             margin-top: 30px;
             font-size: 14px;
             color: #777;
         }
+
+        /* أزرار التنقل بين الصفحات */
+        .nav-links {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(90deg, #4c68d7, #1f45c0);
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: linear-gradient(90deg, #1f45c0, #4c68d7);
+        }
+
         @media (min-width: 600px) {
             body {
                 max-width: 650px;
@@ -103,6 +132,13 @@
     <p>
         قد يتم تحديث هذه السياسة من وقت لآخر، وسيتم إخطار المستخدم عند أي تعديل جوهري.
     </p>
+
+    <!-- أزرار التنقل بين الصفحات -->
+    <div class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">حول التطبيق</a>
+        <a href="terms.html">الشروط والأحكام</a>
+    </div>
 
     <small>آخر تحديث: نوفمبر 2025</small>
 
