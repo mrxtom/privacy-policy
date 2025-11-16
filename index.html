@@ -1,66 +1,91 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مدار أكاديمي</title>
     <style>
-        /* خطوط وألوان مشابهة لإنستغرام */
+        /* خطوط وألوان حديثة */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #262626;
+            background: linear-gradient(180deg, #f5f7fa 0%, #e4ebf5 100%);
+            color: #222;
         }
 
         .container {
-            padding: 20px;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
             text-align: center;
         }
 
         h1 {
-            font-size: 26px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #111;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1f45c0;
         }
 
         p {
-            font-size: 16px;
-            margin-bottom: 15px;
+            font-size: 17px;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
-        a {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: 500;
+        .links a {
+            display: block;
+            margin: 12px 0;
+            padding: 12px 0;
+            font-size: 17px;
+            font-weight: 600;
             text-decoration: none;
             color: #fff;
+            border-radius: 10px;
             background: linear-gradient(90deg, #4c68d7, #1f45c0);
-            border-radius: 8px;
-            transition: background 0.3s;
+            transition: 0.3s;
         }
 
-        a:hover {
+        .links a:hover {
             background: linear-gradient(90deg, #1f45c0, #4c68d7);
+        }
+
+        .contact {
+            margin-top: 30px;
+            text-align: right;
+            font-size: 16px;
+            line-height: 2;
+        }
+
+        .contact strong {
+            color: #1f45c0;
         }
 
         small {
             display: block;
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 14px;
-            color: #999;
+            color: #777;
         }
 
-        @media (min-width: 600px) {
+        @media (max-width: 600px) {
             .container {
-                max-width: 500px;
-                margin: 50px auto;
+                margin: 30px 15px;
+                padding: 25px 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .links a {
+                font-size: 16px;
+                padding: 10px 0;
             }
         }
     </style>
@@ -69,11 +94,20 @@
     <div class="container">
         <h1>مرحبًا بك في مدار أكاديمي</h1>
 
-        <p>للاطلاع على المعلومات الأساسية عن التطبيق، يرجى زيارة الصفحات التالية:</p>
+        <p>نحن نقدم محتوى تعليمي رصين لجميع المراحل الدراسية. لاطلاع على المعلومات الأساسية حول التطبيق، يرجى زيارة الصفحات التالية:</p>
 
-        <a href="privacy.html">سياسة الخصوصية</a>
-        <a href="terms.html">الشروط والأحكام</a>
-        <a href="about.html">حول التطبيق</a>
+        <div class="links">
+            <a href="about.html">حول التطبيق</a>
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">الشروط والأحكام</a>
+        </div>
+
+        <div class="contact">
+            <p><strong>بريد الدعم الفني:</strong> support@madaracademy.com</p>
+            <p><strong>رقم الدعم الفني:</strong> +964 770 123 4567</p>
+            <p><strong>بريد المدرسين الراغبين بالنشر:</strong> teachers@madaracademy.com</p>
+            <p><strong>رقم هاتف المدرسين:</strong> +964 770 765 4321</p>
+        </div>
 
         <small>آخر تحديث: نوفمبر 2025</small>
     </div>
